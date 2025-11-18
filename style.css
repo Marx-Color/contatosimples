@@ -11,6 +11,7 @@ body{
  width: 360px;
  height: 712px;
  margin: 50px auto;
+ padding: 0 24px;
 }
 .profile{
   text-align: center;
@@ -38,17 +39,36 @@ body *{
 }
 ul {
   list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px ;
  }
 
-ul li {
-  list-style: none;
-  margin-top: 20px;
 
-}
 
 ul li a {
   text-decoration: none;
   color: #e6e1e1; 
   display: flex;
   gap: 8;
+  justify-content: center;
+  padding: 16px 24px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+
+
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
