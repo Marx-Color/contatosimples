@@ -1,43 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevLinks</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link rel="icon" href="favicon.svg"  type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <body>
-  <div class="container">
-    <div class="profile"> 
-      <img src="image/avatar-light.png" alt="Avatar do Usuário" class="avatar">
-      <h1 class="name">@reicd</h1>
-      <p class="description">Coleção de links úteis para desenvolvedores.</p>
-      <ul>
-        
-        <li><a href="https://marx-color.github.io/portifolio2025/">Ver meu portfólio</a></li>
-        <li><a href="https://www.duarterc.eu.org/site/">Conheça meu site</a></li>
-        <li><a href="https://www.canteiroeobra.eng.br/marxcolor/">Conheça a Marx Color</a></li>
+    <div class="container">
+      <div class="profile">
+        <img
+          src="image/avatar-light.png"
+          alt="Avatar do Usuário"
+          class="avatar"
+        />
+        <h1 class="name">@reicd</h1>
+      </div>
+      <div id="switch">
+        <button>
+          </button>
+          <span></span>
+      </div>
+      <div> 
        
-      </ul>
-   </div>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/reicd1/"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="https://www.linkedin.com/in/reicd/"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="https://www.github.com/reicd"><ion-icon name="logo-github"></ion-icon></a>
-       <a href="https://x.com/reicd"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="https://www.youtube.com/reicd1"><ion-icon name="logo-youtube"></ion-icon></a> 
+        <ul>
+          <li>
+            <a href="https://marx-color.github.io/portifolio2025/"
+              >Ver meu portfólio</a
+            >
+          </li>
+          <li>
+            <a href="https://www.duarterc.eu.org/site/">Conheça meu site</a>
+          </li>
+          <li>
+            <a href="https://www.canteiroeobra.eng.br/marxcolor/"
+              >Conheça a Marx Color</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/reicd1/"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/reicd/"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://www.github.com/reicd"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://x.com/reicd"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://www.youtube.com/reicd1"
+          ><ion-icon name="logo-youtube"></ion-icon
+        ></a>
+      </div>
     </div>
-  </div> 
-  <footer>
-    <p>Copyright © 2023 | Desenvolvido por <a href="https://www.canteiroeobra.eng.br/marxcolor/" target="_blank" rel="nofollow">Marx Color</a></p> 
-  </footer>
-        
-   
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <footer>
+      <p>
+        Copyright © <span id="year"></span>| Desenvolvido por
+        <a
+          href="https://www.canteiroeobra.eng.br/marxcolor/"
+          target="_blank"
+          rel="nofollow"
+          >Marx Color</a
+        >
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
   </body>
 </html>
