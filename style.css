@@ -29,11 +29,11 @@ body{
  margin: 50px auto;
  padding: 0 24px;
 }
-.profile{
+#profile{
   text-align: center;
   padding: 24px;
 }
-.avatar{
+#avatar{
   width: 112px;
   border-radius: 50%;
 }
